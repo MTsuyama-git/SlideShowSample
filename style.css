@@ -1,0 +1,159 @@
+.media {
+  width: 480px;
+  height: 360px;
+  box-sizing: border-box;
+}
+
+.thumbnail_indexer_wrapper {
+  position: absolute;
+  width: 96px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  z-index: 101;
+  transition: all 0.3s;
+}
+
+.thumbnail_indexer {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ff0000;
+  margin: 0px;
+}
+
+.thumbnail_listener {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 100;
+}
+
+.thumbnail_box {
+  border: 1px solid black;
+  height: 100px !important;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+}
+
+.thumbnail {
+  position: relative;
+  font-size: 0;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+  width: auto;
+  user-select: none;
+  cursor: pointer;
+}
+
+.thumbnail:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.thumbnail > img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  object-fit: contain;
+  user-select: none;
+}
+
+.frame {
+  font-size: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.slideShow {
+  position: relative;
+  overflow-x: hidden;
+  padding: 0;
+  border: solid 1px black;
+  box-sizing: content-box;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  width: 40px;
+  height: 80px;
+  color: #000000;
+  background-color: #ffffff80;
+  z-index: 100;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.prev:before,
+.next:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.prev {
+  left: 5px;
+}
+
+.next {
+  right: 5px;
+}
+
+.slideContent {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  transition: all 0.6s;
+}
+
+.frame:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.frame > img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.frame > video {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <div id="slideShow" class="media slideShow">
+      <div id="prev" class="prev"><</div>
+      <div style="left: 0px;" id="slideContent" class="slideContent">
+        <div class="media frame">
+          <img
+            src="https://images.kaorusasahara.com/thumbnails/video/sample_0001@1280.webp"
+          />
+        </div>
+        <div class="media frame">
+          <img
+            src="https://images.kaorusasahara.com/thumbnails/video/sample_0002@1280.webp"
+          />
+        </div>
+        <div class="media frame">
+          <img
+            src="https://images.kaorusasahara.com/thumbnails/video/sample_0003@1280.webp"
+          />
+        </div>
+        <div class="media frame">
+          <img
+            src="https://images.kaorusasahara.com/thumbnails/video/sample_0004@1280.webp"
+          />
+        </div>
+        <div class="media frame">
+          <video
+            type="video/mp4"
+            src="https://images.kaorusasahara.com/images/video/sample.mp4"
+            controls
+            muted
+          />
+        </div>
+      </div>
+      <div id="next" class="next">></div>
+    </div>
+    <div style="height: 1em;"></div>
+    <div class="media thumbnail_box">
+      <div id="indexer" class="thumbnail_indexer_wrapper">
+        <div class="thumbnail_indexer"></div>
+      </div>
+      <div class="thumbnail">
+        <div
+          class="thumbnail_listener"
+          id="thumbnail0"
+          onclick="onClickThumbnail(event)"
+        ></div>
+        <img
+          src="https://images.kaorusasahara.com/thumbnails/video/sample_0001@720.webp"
+        />
+      </div>
+      <div class="thumbnail">
+        <div
+          class="thumbnail_listener"
+          id="thumbnail1"
+          onclick="onClickThumbnail(event)"
+        ></div>
+        <img
+          src="https://images.kaorusasahara.com/thumbnails/video/sample_0002@720.webp"
+        />
+      </div>
+      <div class="thumbnail">
+        <div
+          class="thumbnail_listener"
+          id="thumbnail2"
+          onclick="onClickThumbnail(event)"
+        ></div>
+        <img
+          src="https://images.kaorusasahara.com/thumbnails/video/sample_0003@720.webp"
+        />
+      </div>
+      <div class="thumbnail">
+        <div
+          class="thumbnail_listener"
+          id="thumbnail3"
+          onclick="onClickThumbnail(event)"
+        ></div>
+        <img
+          src="https://images.kaorusasahara.com/thumbnails/video/sample_0004@720.webp"
+        />
+      </div>
+      <div class="thumbnail">
+        <div
+          class="thumbnail_listener"
+          id="thumbnail4"
+          onclick="onClickThumbnail(event)"
+        ></div>
+        <img
+          src="https://images.kaorusasahara.com/thumbnails/video/sample@720.webp"
+        />
+      </div>
+    </div>
+    <h1>
+      I caught a feebus at Mt. Coronet.
+    </h1>
+    <!--<div
+      style="width: 300px; height: 200px; border: 1px solid black;"
+      id="logger"
+    ></div>-->
+    <script type="text/javascript" src="slider.js"></script>
+  </body>
+</html>
